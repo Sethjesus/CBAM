@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBAM 2023 - 2026</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header, footer {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+h1, p, li, button {
+  margin: 0;
+}
+
+article {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+footer {
+  font-size: 0.8em;
+}
+
+#langBtn {
+  background: #f1f1f1;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 data-en="Carbon Border Adjustment Mechanism (CBAM) Overview" data-zh="碳邊境調整機制(CBAM)概覽">Carbon Border Adjustment Mechanism (CBAM) Overview</h1>
+  <p data-en="2023 - 2025 and Beyond" data-zh="2023年至2025年及以後">2023 - 2025 and Beyond</p>
+  <button onclick="toggleLanguage()" id="langBtn">中文</button>
+</header>
+<article id="cbamArticle">
+  <section>
+    <h2 data-en="Introduction" data-zh="介紹">Introduction</h2>
+    <p data-en="The Carbon Border Adjustment Mechanism is designed to prevent carbon leakage and promote global carbon emissions reduction." data-zh="碳邊境調整機制旨在防止碳排並促進全球碳排放減少。">The Carbon Border Adjustment Mechanism is designed to prevent carbon leakage and promote global carbon emissions reduction.</p>
+  </section>
+  <section>
+    <h2 data-en="2023 - 2025 Implementation" data-zh="2023年至2025年實施">2023 - 2025 Implementation</h2>
+    <p data-en="The initial phase of CBAM focuses on regulatory adjustments and gradual inclusion of import sectors. Here are the details:" data-zh="CBAM的初始階段專注於監管調整和逐步包括進口部門。以下是詳情：">The initial phase of CBAM focuses on regulatory adjustments and gradual inclusion of import sectors. Here are the details:</p>
+    <ul>
+      <li data-en="2023: Introduction and testing phase." data-zh="2023年：引入和測試階段。">2023: Introduction and testing phase.</li>
+      <li data-en="2024: Expansion to cover more industries." data-zh="2024年：擴展至更多行業。">2024: Expansion to cover more industries.</li>
+      <li data-en="2025: Full enforcement begins." data-zh="2025年：全面執行開始。">2025: Full enforcement begins.</li>
+    </ul>
+  </section>
+  <section>
+    <h2 data-en="Policy" data-zh="政策">Policy</h2>
+    <p data-en="Detailed policies of CBAM including tariffs and adjustments specific to high-carbon products." data-zh="CBAM的具體政策，包括對高碳產品的關稅和調整。">Detailed policies of CBAM including tariffs and adjustments specific to high-carbon products.</p>
+  </section>
+  <section>
+    <h2 data-en="Solutions" data-zh="解決方案">Solutions</h2>
+    <p data-en="Innovative approaches to meet CBAM regulations, including technological advancements and strategic partnerships." data-zh="滿足CBAM規定的創新方法，包括技術進步和戰略合作。">Innovative approaches to meet CBAM regulations, including technological advancements and strategic partnerships.</p>
+  </section>
+  <section>
+    <h2 data-en="Looking Ahead to 2026" data-zh="展望2026年">Looking Ahead to 2026</h2>
+    <p data-en="Predictions and expected developments for the year 2026, including further international cooperation." data-zh="對2026年的預測和預期發展，包括進一步的國際合作。">Predictions and expected developments for the year 2026, including further international cooperation.</p>
+  </section>
+</article>
+<footer>
+  <p data-en="JP ESG Press Release." data-zh="景沛ESG新聞稿。">Published by Environmental Insights.</p>
+</footer>
+<script>
+let currentLanguage = 'en';
+
+function toggleLanguage() {
+  currentLanguage = currentLanguage === 'en' ? 'zh' : 'en';
+  document.getElementById('langBtn').textContent = currentLanguage === 'en' ? '中文' : 'English';
+
+  document.querySelectorAll('[data-en]').forEach(elem => {
+    elem.textContent = elem.getAttribute(`data-${currentLanguage}`);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  toggleLanguage(); // Initialize to English
+});
+</script>
+</body>
+</html>
